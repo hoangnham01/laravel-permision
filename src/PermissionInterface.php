@@ -10,5 +10,34 @@ namespace NhamHV\Permission;
 interface PermissionInterface
 {
 
-    public function hello();
+    /**
+     * @param $groupId
+     * @param array | string $currentPermissions
+     * @return mixed
+     */
+    public function setData($groupId, $currentPermissions = array());
+
+    /**
+     * @param string|array $name
+     * @return boolean
+     */
+    public function checkRole($name);
+
+    /**
+     * @param string|array $route
+     * @return boolean
+     */
+    public function checkRoute($route);
+
+    /**
+     * @param string|array $route
+     * @return mixed
+     */
+    public function hasRoute($route);
+
+    /**
+     * @param string|array $name
+     * @return mixed
+     */
+    public function hasRole($name);
 }

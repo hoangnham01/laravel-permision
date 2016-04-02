@@ -36,7 +36,7 @@ class PermissionServiceProvider extends ServiceProvider
         });
         $this->app->singleton('NhamHV\Permission\PermissionInterface', 'NhamHV\Permission\Permission');
 
-        $this->mergeConfigFrom(__DIR__ . '/config/permissions.php', 'permissions.php');
+        $this->mergeConfigFrom(__DIR__ . '/config/permissions.php', 'permissions');
 
     }
 
