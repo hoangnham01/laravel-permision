@@ -15,7 +15,6 @@
   },
   "autoload": {
     "files": [
-      "src/helpers/function.php"
     ],
     "psr-4": {
       "NhamHV\\Permission\\": "src/"
